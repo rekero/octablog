@@ -1,0 +1,22 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body { margin-bottom: 60px; }
+
+#header {
+  height: 70px;
+  min-width: 100%;
+  background-color: black;
+  color: #9B111E;
+}
+
+.content { padding: 50px; }
+
+.edit {
+  float: right;
+  padding-right: 10px;
+}
+
+#post-form { padding-bottom: 15px; }

@@ -1,0 +1,13 @@
+%table.table.table-bordered
+  %tr
+    %td Name
+    %td Author
+    %td Category
+    %td Rating
+    %td Date
+  %tr
+    %td= @post.name
+    %td= @post.author
+    %td= @post.category
+    %td= @post.rating
+    %td= @post.date.strftime("%d-%m-%Y")

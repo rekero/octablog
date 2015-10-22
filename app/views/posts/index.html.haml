@@ -1,0 +1,30 @@
+.row
+  .col-md-5.col-md-offset-1
+    %h2 Posts
+  .col-md-2.col-md-offset-4
+    = link_to new_post_path, remote: true do
+      %button.btn.btn-default New
+.row
+  #post-form.col-md-6.col-md-offset-2{:style => "display:none;"}
+.row.panel.panel-default.col-md-7.col-md-offset-1
+  #posts.panel-body= render @posts
+.panel.panel-default.col-md-7.col-md-offset-1
+  .panel-heading
+    %h2.panel-title Search
+  .panel-body
+    %div.input_group
+      .row
+        Author
+        #search= search_field_tag :author
+      .row
+        Min rating
+        #search= search_field_tag :min_rating
+      .row
+        Max rating
+        #search= search_field_tag :max_rating
+      .row
+        Category
+        #search= search_field_tag :category
+      .row
+        Date
+        #search= search_field_tag :date

@@ -1,0 +1,7 @@
+en:
+  hello: "Hello world"
+  date:
+    datepicker:
+      default: "dd-mm-yyyy"
+    formats:
+      default: '%d-%m-%Y'
